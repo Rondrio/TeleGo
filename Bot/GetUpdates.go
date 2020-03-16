@@ -59,3 +59,4 @@ func (bot *Bot) GetUpdate(ctx *UpdateContext) (*GotUpdate, error) {
 	err = json.Unmarshal(buf.Bytes(), &updates)
 	return &updates, err
 }
+

@@ -14,3 +14,7 @@ type Update struct {
 	Poll               Poll               `json:"poll,omitempty"`
 	PollAnswer         PollAnswer         `json:"poll_answer,omitempty"`
 }
+
+func (u Update) GetMessage() Message {
+	return u.Message
+}
