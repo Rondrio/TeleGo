@@ -21,6 +21,9 @@ type GotUpdate struct {
 	Result []Structs.Update `json:"result"`
 }
 
+var DefaultCtx = UpdateContext{}
+var MessageCtx = UpdateContext{AllowedUpdates: []string{"messages"},}
+
 //ctx is optional
 func (bot *Bot) GetUpdate(ctx *UpdateContext) (*GotUpdate, error) {
 	var updates GotUpdate
