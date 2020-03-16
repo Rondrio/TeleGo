@@ -17,8 +17,8 @@ type UpdateContext struct {
 }
 
 type GotUpdate struct {
-	Ok     bool             `json:"ok"`
-	Result []Structs.Update `json:"result"`
+	Ok      bool             `json:"ok"`
+	Updates []Structs.Update `json:"result"`
 }
 
 var DefaultCtx = UpdateContext{}
